@@ -4259,7 +4259,6 @@ _G.Rc7Notification = function(a,b,c)
         --// SERVER //--
         local servwin = topkek.tools.gui:hookContainer(topkek.tools.util.getContainer('Server').Container)
         local detailWin = servwin:drawContainer(1, 100, nil, nil, 18)
-        detailWin:drawText(1, 'Job ID: ' .. (game.JobId and (game.JobId ~= "") or "???"))
         detailWin:drawText(1, 'Game Name: ' .. game:service'MarketplaceService':GetProductInfo(game.PlaceId).Name)
         detailWin:drawText(1, 'Creator Name: ' .. game:GetService('Players'):GetNameFromUserIdAsync(game.CreatorId))
         --detailWin:drawText(1, 'Genre: ' .. tostring(game.Genre))
